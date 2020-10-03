@@ -1,0 +1,215 @@
+$primaryColor: #092651;
+$IRANSansRegular:'IRANSans';
+$mainBoxShadow: 0 0 6px 2px rgba(0, 0, 0, 0.1);
+@font-face {
+	font-family: 'IRANSans';
+	font-style: normal;
+	font-weight: normal;
+	src: local('IRANSans'), url('./../../assets/fonts/IRANSansWeb.woff') format('woff');
+}
+html{
+		height: 100%;
+}
+body {
+	margin: 0;
+	height: 100%;
+	background-color:$primaryColor !important;
+
+	&::-webkit-scrollbar {
+		width: 0.5em;
+	}
+	&::-webkit-scrollbar-thumb {
+		background-color: $primaryColor;
+		border-radius: 10px;
+		margin: 4px;
+	}
+}
+body,
+html {
+	height: 100%;
+	background-color: var(--color06);
+	font-family: YekanBakh;
+}
+.custom-nav {
+  border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+
+  box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.1);
+  background: #35363a !important;
+  /*margin: 10px;*/
+}
+.contact100-form-btn {
+	width: 100%;
+	height: 50px;
+	border-radius: 25px;
+	background: $primaryColor;
+	font-family:$IRANSansRegular;
+	font-size: 15px;
+	line-height: 1.5;
+	color: #fff;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0 25px;
+	-webkit-transition: all 0.4s;
+	-o-transition: all 0.4s;
+	-moz-transition: all 0.4s;
+	transition: all 0.4s;
+	&:hover {
+		background: #333333;
+	}
+}
+.wrap-input100 {
+  position: relative;
+  width: 100%;
+  z-index: 1;
+  margin-bottom: 10px;
+}
+
+.input100 {
+  display: block;
+  width: 100%;
+  background: #e6e6e6;
+  font-family:$IRANSansRegular;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #666666;
+}
+
+
+.wrap-contact100 {
+	width: 100%;
+	background: #fff;
+	border-radius: 10px;
+	overflow: hidden;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 110px 310px 157px 318px;
+	box-shadow: $mainBoxShadow
+}
+@media (max-width: 992px) {
+	.wrap-contact100 {
+		padding: 110px 80px 157px 90px;
+	}
+	.contact100-pic {
+		width: 35%;
+	}
+	.contact100-form {
+		width: 55%;
+	}
+}
+@media (max-width: 768px) {
+	.wrap-contact100 {
+		padding: 110px 80px 157px 80px;
+	}
+	.contact100-pic {
+		display: none;
+	}
+	.contact100-form {
+		width: 100%;
+	}
+}
+@media (max-width: 576px) {
+	.wrap-contact100 {
+		padding: 110px 15px 157px 15px;
+	}
+}
+
+
+.footer-main{
+	border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.1);
+}
+
+
+.content{
+	height: 100vh;
+	width: 100vw;
+	background-color: $primaryColor;
+	background-repeat: no-repeat;
+	overflow: hidden;
+}
+
+.box{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-flow: column;
+	flex-flow: column;
+	width: 100%;
+	max-width: 850px;
+	height: 100%;
+	margin-right: auto;
+	margin-left: auto;
+	direction: rtl;
+	overflow-y: hidden;
+		.auth-content-box {
+			background-color: #fff;
+			border-radius: 1.5rem 1.5rem 0 0;
+			box-shadow: 0 2px 7px 0 rgba(0, 0, 0, .08);
+			height: 100%;
+			overflow: hidden;
+			z-index: 1;
+			position: relative;
+			font-family: YekanBakh;
+			text-align: center;
+		}
+	.row{
+		
+		
+	}
+	.lheader {
+		-webkit-box-flex: 0;
+		-ms-flex: 0 1 auto;
+		flex: 0 1 auto;
+	}
+	.lcontent {
+		direction: ltr;
+		-webkit-box-flex: 1;
+		-ms-flex: 1 1 auto;
+		flex: 1 1 auto;
+		overflow-y: auto;
+		height: 100%;
+
+	}
+
+}
+
+.center {
+  .slick-center {
+
+    h3 {
+    	-moz-transform: scale(1.08);
+    	-ms-transform: scale(1.08);
+    	-o-transform: scale(1.08);
+    	-webkit-transform: scale(1.08);
+    	color: #e67e22;
+    	opacity: 1;
+    	transform: scale(1.08);
+    }
+
+}
+}
+
+ h3 {
+	background: #fff;
+	color: #3498db;
+	font-size: 36px;
+	line-height: 100px;
+	margin: 10px;
+	padding: 2%;
+	position: relative;
+	text-align: center;
+}
