@@ -169,6 +169,12 @@ html {
 .mr-top-20{
 	margin-top: 20px;
 }
+.mr-bottom-15{
+	margin-bottom: 15px;
+}
+.font-size-12{
+	font-size: 12px;
+}
 .box{
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -247,6 +253,34 @@ html {
 	width: 20px;
 	height: 20px
 }
+
+.bottom-bar-item{
+	display: flex;
+    margin: 10px;
+    align-items: center;
+    justify-content: center;
+        background: #ffffff1a;
+    width: 60px;
+    border-radius: 8px;
+    padding: 4px;
+
+}
+.td-flex{
+	justify-content: center;
+}
+.display-flex{
+	
+    display: flex;
+}
+.justify-center{
+justify-content: center;
+}
+.bottom-bar-item-text{
+	 color: #fff;
+    font-family: 'IRANSans';
+    margin-left: 9px;
+}
+   
 
 footer{
 	background-color: $white
@@ -344,3 +378,5 @@ $grid-spacing:3%;
 .col-10 { width:(100% / 1.2) - ($grid-spacing * 2 / 12); }
 .col-11 { width:(100% / 1.090909090909091) - ($grid-spacing * 1 / 12); }
 .col-12 { width:100%; }
+
+

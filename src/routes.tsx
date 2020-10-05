@@ -1,6 +1,6 @@
 
 import Home from "./layouts/home/Home";
-import Contact from "./layouts/contact/Contact";
+import Profile from "./layouts/profile/Profile";
 
 
 var routes = [
@@ -14,16 +14,21 @@ var routes = [
     // component: Home,
     // layout: "/main"
   },
+
   {
-    path: "/contact",
-    component: Contact
-    // path: "/contact",
-    // name: "Contact",
-    // rtlName: "لوحة القيادة",
-    // icon: "tim-icons icon-chart-pie-36",
-    // component: Contact,
-    // layout: "/main"
-  },
+    path: "/profile",
+    component: Profile,
+    // routes: [
+    //   {
+    //     path: "/tacos/bus",
+    //     component: Bus
+    //   },
+    //   {
+    //     path: "/tacos/cart",
+    //     component: Cart
+    //   }
+    // ]
+  }
 
 
 ];

@@ -22,7 +22,9 @@ import Axios from  './../../api';
 import moment from 'moment';
 import momentJalli from 'moment-jalaali';
 import Slider from "react-slick";
-import Home from  './../../assets/icon/home.svg'
+import Home from  './../../assets/icon/home'
+import User from  './../../assets/icon/user'
+
 var s=require("moment/locale/fa")  ;
 
 const instance = Axios.create({
@@ -41,7 +43,7 @@ const instance = Axios.create({
   },
   {
     name: "b",
-    image: Home,
+    image: User,
     id: 2,
   },
   {
@@ -123,13 +125,20 @@ const renderBottomNavigation = () => {
   <table>
   <tr>
 {  cards.map(card => {
-    return (<td>
-<div style={{
-width: 10,
-    height: 20}}>
-    <img src={card.image} className="img-bottom-bar"alt="A Rectangle Image with SVG" />
-  
-</div><span>خانه</span>
+    return (<td className="td-flex">
+      <div className="display-flex justify-center">
+ 
+<div className="bottom-bar-item">
+<div>
+       <span className="bottom-bar-item-text">خانه</span>
+    </div>
+    <div>
+     <card.image className="img-bottom-bar" fill={'#fff'}/>
+    </div>
+    
+ 
+</div>
+ </div>
 </td>)
   })
 }

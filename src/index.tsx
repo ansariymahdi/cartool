@@ -49,7 +49,7 @@ ReactDOM.render(
 
       ))
       }
-      <Redirect from="/" to="/home" />
+      <Redirect from="/" to="/profile" />
     </Switch> 
 
 
